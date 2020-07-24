@@ -1,7 +1,8 @@
-# deviation
-Use an SDR dongle &amp; GNU radio to measure FM deviation
-
 ## Using an SDR & GNU radio as a Deviation Meter
+
+Use an SDR dongle and GNU radio to measure FM deviation
+
+[Link to GNU Radio Companion Tutorial](https://wiki.gnuradio.org/index.php/Guided_Tutorial_GRC)
 
 Attached is the .grc file, and the .py file. I have used two different
 dongles, one the official RTL SDR with the metal case, and one something
@@ -49,7 +50,7 @@ the dongle is accurate. You can also calibrate by leaving the input
 signal alone and setting the receive frequency of the dongle 5KHz or
 somesuch off frequency.
 
-Other stuff:
+### Other Stuff
 
 The received audio is also sent to the sound sink, but with no
 de-emphasis it's pretty tinny sounding. So I added a single pole LP IIR
@@ -87,5 +88,3 @@ careful to set the gains in the repeater controller so that whatever the
 input deviation was, the output deviation matched. So if you see someone
 with 1.5KHz deviation on the repeater output, that's pretty darn close
 to their actual deviation.
-
-Let me know how it works for you.
