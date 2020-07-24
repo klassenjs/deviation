@@ -1,12 +1,14 @@
 ## Using an SDR & GNU radio as a Deviation Meter
 
-Use an SDR dongle and GNU radio to measure FM deviation
+Below is a write up from **Ed Kelm KD7TUN** on how to use an SDR
+dongle and GNU Radio to measure FM deviation
 
 [Link to GNU Radio Companion Tutorial](https://wiki.gnuradio.org/index.php/Guided_Tutorial_GRC)
 
-Attached is the .grc file, and the .py file. I have used two different
-dongles, one the official RTL SDR with the metal case, and one something
-Bryan gave me that had an F connector. Both worked fine.
+In this repo are the .grc file, and the .py file. I have used two
+different dongles, one the official RTL SDR with the metal case, and
+one something Bryan gave me that had an F connector. Both worked fine.
+I used the [NooElec E4000 SDR](https://www.nooelec.com/store/sdr/sdr-receivers/nesdr-xtr-plus.html)
 
 So, the basic idea was to look at the audio output from the FM
 demodulator with no de-emphasis, and apply some sort of peak detector to
